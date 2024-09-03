@@ -1,0 +1,64 @@
+C# vs Java
+
+folder
+        namespace
+        package
+
+naming conventions
+    CS
+        classes: UpperCamelCase
+        extension: .cs
+        attributes: camelCase
+        actions: UpperCamelCase
+            ToString()   Equals()
+    Java
+        classes: UpperCamelCase
+        extension: .java
+        attributes: camelCase
+        actions: camelCase
+
+Data Types
+    C#
+        int
+        bool
+        string
+        char
+        double
+        float
+        long
+        byte    -128    127
+        decimal
+        short
+        ushort
+        sbyte   0       255
+        ulong
+        uint
+all of the above are primitive data types
+    numerical * except string
+    first letter starts with a lower case
+
+Java
+    int
+    short
+    byte
+    long
+    double
+    float
+    we don't care about this signed and unsigned madness
+    String
+    boolean
+    NO Decimal data type
+
+Output
+    C#
+        Console.Write/WriteLine()
+    Java
+        System.out.print/print()
+
+Input
+    C#
+        Console.ReadLine()
+    Java
+        Create a Scanner object
+        used s Scanner object method
+        new Scanner().nextLine()
