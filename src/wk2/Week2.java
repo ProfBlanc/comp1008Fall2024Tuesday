@@ -1,12 +1,13 @@
 package wk2;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Week2 {
 
     //psvm+tab
     public static void main(String[] args) {
-        example2();
+        example5();
     }
 
     static void example1(){
@@ -90,6 +91,95 @@ public class Week2 {
                 totalBeforeTax,tax,grandTotal);
 
 
+
+    }
+    static void example3(){
+
+        //do-while loop: runs at least once
+        //post-condition iteration structure
+
+        //continually ask the user for an odd number
+
+        int number = 0;
+        Scanner input = new Scanner(System.in);
+
+        do{
+            System.out.println("Enter a number");
+            number = input.nextInt();
+            if(number % 2 == 0)
+                System.out.println("Number " + number + " is even. Please enter an odd number");
+
+        }while(number % 2 == 0);
+
+        System.out.println("Thank you for entering an odd number");
+        System.out.println("The number you inputted was " + number);
+
+    }
+
+    static void example4(){
+
+        /*
+                continually ask user for a number between 1 & 10
+                until they have correctly guessed the number
+         */
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+        int numberToGuess = random.nextInt(1, 11);
+        int userGuess = 0;
+        while(true){
+
+            System.out.println("Enter a number");
+            userGuess = input.nextInt();
+            if(userGuess == numberToGuess){
+                System.out.println("Congrats! You correctly guessed the number");
+                break;
+            }
+            else if(userGuess < numberToGuess){
+                System.out.println("Guess higher");
+            }
+            else{
+                System.out.println("Guess lower");
+            }
+        }
+
+    }
+
+    static void example5(){
+
+        /*
+            Ask the user two numbers.
+            Count up from lowest number to highest number,
+            increasing by a random int value between 1 and 3
+         */
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+        int increase = random.nextInt(1, 4);
+
+        System.out.println("Enter first number");
+        int firstNumber = input.nextInt();
+        System.out.println("Enter second number");
+        int secondNumber = input.nextInt();
+
+        int start, end;
+
+        start = firstNumber <= secondNumber ? firstNumber : secondNumber;
+
+        //coniditional opoerator aka ternary operator
+        // boolean_expression ? statementIfTrue : statementIfFalse
+
+        if(firstNumber <= secondNumber){
+            start = firstNumber;
+        }
+        else{
+            start = secondNumber;
+        }
+
+        end = Math.max(firstNumber, secondNumber);
+
+        for(int i = start; i <= end; i+=increase){
+            System.out.println(i);
+        }
 
     }
 

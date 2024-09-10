@@ -1,0 +1,32 @@
+Tasks
+
+Task 1
+
+        ask the user to enter their total purchase price
+        ask the user for their age
+            if user is within 18-25, apply a 10% discount to price
+            if user is over 65, apply a 25% discount
+        output to the screen
+            total price
+            discount taken off of price
+            total with discount applied
+            output the tax (13%)
+            output the grand total (price - discount, plus tax)
+
+
+Task 2
+    Addition Storm
+
+    Continually give the number an addition equation
+    add up to 2-digits addition question
+    until they get a question incorrect
+
+    Example
+    1 + 10 = ? 11
+    good!
+    20 + 99 = ? 119
+    good
+    1 + 5 = ? 15
+    incorrect
+    game is over
+
