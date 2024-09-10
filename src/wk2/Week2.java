@@ -7,7 +7,7 @@ public class Week2 {
 
     //psvm+tab
     public static void main(String[] args) {
-        example5();
+        example6();
     }
 
     static void example1(){
@@ -180,6 +180,48 @@ public class Week2 {
         for(int i = start; i <= end; i+=increase){
             System.out.println(i);
         }
+
+    }
+
+    static void example6(){
+
+        Scanner input = new Scanner(System.in);
+        int num1, num2;
+        double userAnswer = 0, actualAnswer = 0;
+        Random random = new Random();
+        char[] operators = {'+', '-', '/', '*'};
+        do{
+            num1 = random.nextInt(1,100);
+            num2 = random.nextInt(1,100);
+
+            char operator = operators[random.nextInt(operators.length)];
+
+            System.out.printf("%d %s %d = ?", num1, operator ,num2);
+            userAnswer = input.nextDouble();
+
+            switch (operator){
+
+                case '+':
+                    actualAnswer = num1 + num2;
+                    break;
+                case '-':
+                    actualAnswer = num1 - num2;
+                    break;
+                case '*':
+                    actualAnswer = num1 * num2;
+                    break;
+                //case '/':
+                default:
+                    actualAnswer = (double) num1 / num2;
+                    break;
+            }
+
+            System.out.println(actualAnswer == userAnswer ? "Correct" : "Incorrect");
+
+        }
+        while(actualAnswer == userAnswer);
+
+
 
     }
 
