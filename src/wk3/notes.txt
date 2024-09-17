@@ -1,0 +1,4 @@
+Getters and Setters
+    aka Accessor and Mutators
+
+Way to give access to otherwise inaccessible instance variable
