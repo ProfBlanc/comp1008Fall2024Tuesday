@@ -12,8 +12,26 @@ public class Person {
     protected float weight;
     private String dob;  //only accessible inside of class
 
+    private double pulse = 80 ;
+    protected float breathingFrequency = 10;
+    public boolean eyesLidState = true;
 
+    public boolean chewing;
     //method
+
+
+    public String sleeping(String location, double duration){
+
+        if(duration >= 30 &&  (location.equals("home") || location.equals("train") || location.equals("bus") )  ){
+            pulse = 50;
+            breathingFrequency /=5;
+            eyesLidState = false;
+            return "Snorrrrrrring!";
+        }
+        return "wide awake";
+    }
+
+    //create a method of a Person eating. Add at least 1 param. Add all needed instace variables
 
     //accessLevel returnDataType name([parameter list]){}
 
@@ -21,6 +39,11 @@ public class Person {
         return dob;
     }
 
+    public void eating(String location, byte hourTime, boolean edible){
+
+        chewing = edible && hourTime >12 && hourTime <= 18 && (location.equals("home") || location.equals("school"));
+
+    }
     public void setDob(String dob){
         //enforce the restrictions so that user
         // must input of in the form of
@@ -48,6 +71,23 @@ public class Person {
 
         //.split(string value)  comma  => array of values
 
+
+    }
+
+
+
+    //constructor is a special method
+    //w/o return data type
+    // name = class name
+
+    public Person(){}
+
+    public Person(String name, double height, float weight, String dob){
+
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+        setDob(dob);
 
     }
 

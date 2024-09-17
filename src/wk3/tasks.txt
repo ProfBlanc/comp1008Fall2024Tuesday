@@ -1,0 +1,37 @@
+
+Task 1
+
+setDob()
+    enforce the restrictions so that user
+    must input of in the form of
+    Three-Lettered-Month, Two-Digit-Day, Four-Digit-Year
+    if not, print error. if yes, set this.dob to dob
+
+
+Task 2
+
+Create a method of a Person eating.
+Add at least 1 param. A
+dd all needed instance variables
+
+
+Task 3
+
+Account class
+    have attributes
+        account Name
+        account Type: restrict to either checking or savings
+        account balance: non-negative value
+
+    code needed getters and setters
+
+    add following methods
+        withdraw (amount): cannot exceed account balance. amount must be greater than 0.
+                                substract amount from balance
+
+        deposit(amount): greater than zero. add amount to balance
+
+    add 2 constructo
+        default
+        2-args  => call setters in this constructor
+
