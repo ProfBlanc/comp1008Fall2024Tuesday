@@ -28,12 +28,35 @@ public class Week3 {
             int userGuess = input.nextInt();
             if(userGuess == numberToGuess){
                 System.out.println("You guessed the number " + numberToGuess);
+                break;
+
             }
             else{
                 //check if number exists in the array (userGuesses)
+                boolean found = false;
+
+                for(int i = 0; i < userGuesses.length; i++){
+                    if(userGuess == userGuesses[i]){
+                        found = true;
+                        break;
+                    }
+                }
+
+
                 //if yes, not count the guess. if not, count the guess
+                if(found){
+                    System.out.println("The number " + userGuess + " was already guessed. Try a new number");
+                }else{
+                    System.out.println("Your guess in incorrect");
+                    userGuesses[trackUserGuesses] = userGuess;
+                    trackUserGuesses++;
+                }
             }
 
+            if(trackUserGuesses == maxNumberOfGuesses){
+                System.out.println("Game is over! You lose. Ha, ha, ha");
+                break;
+            }
 
             //stop the loop if: 1) user correctly guesses number 2) user reached maxGuessAmount
         }
