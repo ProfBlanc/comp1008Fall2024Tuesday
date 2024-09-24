@@ -1,0 +1,26 @@
+Tasks 1
+
+You will create a pizza delivery program
+You will allow only X amount of toppings (your choice)
+You will only allow X amount of pizza sizes
+
+The user will enter their pizza size:
+    You will display error if user does not enter
+    an allowed pizza size
+    If size is allowed, you will tell the user
+    that "This pizza is the {num} most popular"
+        {num}, will be the position that this size
+        is located
+        E.G.: S,M,L as pizza sizes, and user
+        enters M. You will tell them, this pizza size
+        rands #2 on our most popular pizza sizes
+
+    Continally ask user for a topping.
+    only stop when user enters a disallowed topping
+    Track the amount and toppings user selected
+
+    Prepare a bill for user:
+    $5 base price, $1 x (index + 1) extra for pizza size
+    $2.5 surcharge per topping
+
+    Add tax (HST @ 13%)
