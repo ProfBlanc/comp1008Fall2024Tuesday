@@ -1,0 +1,49 @@
+enums
+    enumerable
+        list/array of constants
+            rep dropdown list of pre-select
+                think: list of countries
+                        list of provinces
+
+no-args
+S
+Sm
+S   S
+Sm  S
+S   Sm
+S   S   Sm
+S   Sm  S
+Sm  S   S
+
+
+**************
+I   D   F
+***************
+
+no-args
+I
+F
+D
+
+IF
+ID
+DI
+DF
+FI
+FD
+
+F   I   D
+F   D   I
+
+D   F   I
+D   I   F
+
+I   D   F
+I   F   D
+
+
+Factory method
+    pre-defined configuration of an object
+    returns a new object of the class
+
+

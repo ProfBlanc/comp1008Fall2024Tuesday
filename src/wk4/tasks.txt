@@ -13,7 +13,7 @@ The user will enter their pizza size:
         is located
         E.G.: S,M,L as pizza sizes, and user
         enters M. You will tell them, this pizza size
-        rands #2 on our most popular pizza sizes
+        ranks #2 on our most popular pizza sizes
 
     Continally ask user for a topping.
     only stop when user enters a disallowed topping
@@ -24,3 +24,27 @@ The user will enter their pizza size:
     $2.5 surcharge per topping
 
     Add tax (HST @ 13%)
+
+
+Task 2
+Create a SuperHero class
+    attributes
+        hero name: at least 4 characters
+        planet: your preset list of allowed planets (enum)
+        fatal flaw / weakness   => final value that must be set for each SuperHero
+        disguised named: at least 10 characters
+        strength level: between 80 and 100
+        list of enemies
+        list of allies
+    actions/methods
+        code the needed getters and setters
+        a method to get a specific enemy by position number
+            validate that position number is within range of number of enemies
+        same for ally
+        code a method named run, fight
+            run: accept 1 String param
+                return HeroName is running towards param
+            fight: accept 1 String param
+                return HeroName is fighting param
+        code at least 5 constructors
+        factory method named Villian: create a new SuperHero with any values of your choice

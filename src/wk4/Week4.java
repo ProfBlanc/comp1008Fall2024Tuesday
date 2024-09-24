@@ -10,6 +10,10 @@ public class Week4 {
 
         //myCourseSchedule();
         guessingGame();
+        Course c = new Course();
+        c.myMethod();
+
+        Course gradCourse = Course.graduateCourse();
     }
 
     static void guessingGame(){
