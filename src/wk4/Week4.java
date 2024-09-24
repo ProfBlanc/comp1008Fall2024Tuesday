@@ -7,13 +7,33 @@ import java.util.Scanner;
 public class Week4 {
 
     public static void main(String[] args) {
+            example2();
+    }
+    static void example2(){
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter super hero's hero name");
+        String heroName = sc.nextLine();
+        System.out.println("Enter super hero disguised name");
+        String disguisedName = sc.nextLine();
+        System.out.println("Enter super hero name fatal flaw");
+        String fatalFlaw = sc.nextLine();
+        System.out.println("Enter super hero name strength");
+        int strength = sc.nextInt();
+
+        SuperHero superHero = new SuperHero(heroName, disguisedName, strength, fatalFlaw);
+        System.out.println(superHero.getHeroName());
+        System.out.println(superHero.fatalFlaw);
+    }
+    static void example1(){
         //myCourseSchedule();
         guessingGame();
         Course c = new Course();
         c.myMethod();
 
         Course gradCourse = Course.graduateCourse();
+
+
     }
 
     static void guessingGame(){

@@ -30,10 +30,10 @@ Task 2
 Create a SuperHero class
     attributes
         hero name: at least 4 characters
-        planet: your preset list of allowed planets (enum)
-        fatal flaw / weakness   => final value that must be set for each SuperHero
         disguised named: at least 10 characters
         strength level: between 80 and 100
+        planet: your preset list of allowed planets (enum)
+        fatal flaw / weakness   => final value that must be set for each SuperHero
         list of enemies
         list of allies
     actions/methods

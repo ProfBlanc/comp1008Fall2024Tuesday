@@ -11,6 +11,8 @@ public class Week3 {
     }
     static void example3(){
 
+
+
         //create a guessing, asking user to guess a number between 1 and 10
         //limit to 3 guesses
         //store the user guesses into an array
