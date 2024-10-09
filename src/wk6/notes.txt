@@ -1,0 +1,61 @@
+Exception:
+    when the script does not finish executing
+
+a script should finish executing
+
+Does that mean that an exception is an error?
+    Yes: RunTime error. Neither syntax nor logical error
+
+How does an exception occur
+    1) inifite loop: StackOverflow
+    2) When attempting to
+            a) convert method
+            b) open a file/resource
+            c) user input
+
+How to avoid exception
+    try-catch statements
+
+    try, catch?
+
+    try/attempt to conver, open, get user input
+    catch: an error that may occur
+
+Brace scope: any variable declared inside of braces is only accessible inside of the brace
+
+
+Stack:
+    a data structure
+        items/values are stacked on top of eachother
+            think a pile of dishes
+    in a stack, methods are called in order that they are called.
+    but executed in reverse order
+
+            C
+            B
+            A
+
+method call: when the is declared and put on the stack (when person put dish in sink)
+method execution: when dish is washed
+
+
+IllegalArgumentException()
+
+example5()
+System.out.println()
+userInput.trim()
+Integer.parseInt()
+sc.nextLine()
+System.out.println()
+example4()
+main()
+
+////////////
+
+UnitTesting
+    getting the final result (behavior) and testing application to see if it passes the test
+    testing methods to determine if they behave properly
+
+    Expected value
+    Received/Actual value
+
