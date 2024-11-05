@@ -1,0 +1,57 @@
+Inheritance
+    building a class based on another class
+
+
+old class                               new class
+
+super* java's preferred term            sub
+base                                    derived
+parent                                  child
+
+
+
+java only supports single-class inheritance
+    hierarchy
+        grandparent     parent      child
+
+what is inherited
+    all non-private
+        instance variables
+        methods *
+
+        why asterisk?
+            only default constructor is inherited if exists
+
+    FAQ
+        can you choose what items to keep and to leave/delete
+            NO
+                Cannot delete instance variables or methods that exists
+
+        can a change the data type or name or a previously existing instance variable?
+            NO
+        can I change the behaviour (body) of a previously existing method?
+            YES: overriding
+        can I add a new variation to a previously existing method
+            YES: overloading
+
+    Create
+        Human
+            attributes
+                name
+                age
+                height
+            methods
+                2 constructors: default + 3-args
+                toString: summarizing
+                jump: return String
+
+        SuperHero
+            attributes
+                heroName
+                ability
+                strength
+                weakness
+            methods
+                3 constructor: default, 3-args(Human), 7-args(Human+SuperHero
+                toString: summarize all 7 attributes
+                jump: override Human jump

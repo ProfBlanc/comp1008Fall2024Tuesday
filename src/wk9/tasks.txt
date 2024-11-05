@@ -1,0 +1,30 @@
+Task 1
+
+Create a class named Animal
+    instance variables:
+        name
+        whiskers
+    methods
+        2 constructors (default + 2-args)
+        speak: String
+        toString; summarize items
+
+Task 2
+Create a class named Tiger
+    based on Animal
+        additional attributes
+            weight
+            stripes
+        overridden methods
+            constructors (3 in total)
+            speak: String
+            toString
+        hunt(region): prey found (String)
+
+Task 3
+    In a runner class
+        instantiate Animal
+        instantiate Tiger
+        output the toString of Animal & Tiger
+        output the result of speak method for Animal & Tiger
+        output the result of the hunt method for Tiger
