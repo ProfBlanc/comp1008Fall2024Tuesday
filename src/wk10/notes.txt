@@ -1,0 +1,75 @@
+Polymorphism
+    Poly = many, multiple
+    morphism = bodies, forms
+
+Are the two O's examples of polymorphism?
+    Override: change implemention
+    Overloading: add variation
+
+
+Classes have be made up of multiple
+    components
+        internal (hdd, video cards, etc)
+            abstract classes
+        external (screens, keyboards, etc)
+            interfaces
+    concrete class: class that is self-sufficient
+                    functions by itself
+
+    abstract classes
+        dedicated superclass.
+        incomplete: needs a subclass to extend it
+            -an incomplete method
+                abstract method
+        it has all the features of concrete class
+            instance variables, methods, constructors, constants
+            -incomplete method (abstract method)
+        Abstract classes good use to categorize an entity
+
+        Shape: of form of something
+                could have sides
+                could have radius
+                could be 2 or 3d
+
+                area, perimeter: good abstract method candidates
+
+    interface
+        list of requirements
+            outline ACTIONS that need to be implemented
+            only have declarations and final values (NOT instance variables)
+            all entities (final, constant values and methods) are public
+        class can implement multiple interfaces
+
+
+
+
+Game part 1:
+
+Me: state an object
+You: state if object should be concrete class, abstract class or interface
+
+1) Does object function by itself
+    Y: concret
+    N: move to question 2
+2) Since object doesn't exist by itself, it is a component of another object
+    Is component an Internal or External component
+    if internal: abstract
+    if external: interface
+
+
+Bag                             C
+House                           C
+Home                            C   A
+Apartment 101 in Building       A
+Floor                           I
+Door                            I
+
+
+
+Game part 2:
+
+regular method          CA
+abstract method         IA
+constructor             CA
+instance variable       CA
+constant value          CAI
